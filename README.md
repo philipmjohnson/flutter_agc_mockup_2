@@ -1,10 +1,12 @@
 # Flutter mockup of the Agile Garden Club app (Phase 2)
 
-This repository contains the second increment of work on a mockup of the [Agile Garden Club](https://agilegardenclub.com) application. It contains around a dozen pages along with simple navigation. 
+This repository contains the second increment of work on a mockup of the [Agile Garden Club](https://agilegardenclub.com) application. 
 
-For Phase 2, the mockup includes a data model located in the `data_model` directory. 
+The main changes in this version are:
 
-From the UI perspective, the Members and Chapters pages have been changed from a markdown description of their contents to an actual UI mockup. There is also context-sensitive help for some pages, accessed via the help icon in the upper right corner. 
+* A data model located in the `data_model` directory. 
+* The Members and Chapters pages have been changed from a markdown description of their contents to an actual UI mockup. 
+* There is context-sensitive help for some pages, accessed via the help icon in the upper right corner. 
 
 
 ## Screen shots 
