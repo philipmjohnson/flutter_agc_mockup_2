@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_agc_mockup/src/components/garden_summary_users_view.dart';
+
 import '../data_model/garden_db.dart';
+import 'garden_summary_users_view.dart';
 
 class GardenSummaryView extends StatelessWidget {
   const GardenSummaryView({Key? key, required this.gardenID}) : super(key: key);

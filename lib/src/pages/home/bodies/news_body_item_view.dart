@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_agc_mockup/src/pages/home/bodies/news_body_item_actions.dart';
+
 import '../../../data_model/chapter_db.dart';
 import '../../../data_model/garden_db.dart';
 import '../../../data_model/news_db.dart';
+import 'news_body_item_actions.dart';
 
 /// Displays a news item given its ID.
 class NewsBodyItemView extends StatelessWidget {
@@ -22,9 +23,11 @@ class NewsBodyItemView extends StatelessWidget {
     String date = data.date;
     String? chapterID = data.chapterID;
     String? gardenID = data.gardenID;
+
     /// Only one of chapterID or gardenID is defined.
-    String chapterName =
-        (chapterID == null) ? '' : '${chapterDB.getChapter(chapterID).name} Chapter';
+    String chapterName = (chapterID == null)
+        ? ''
+        : '${chapterDB.getChapter(chapterID).name} Chapter';
     String gardenName =
         (gardenID == null) ? '' : '${gardenDB.getGarden(gardenID).name} Garden';
     String bodyPrefix = '$chapterName$gardenName';

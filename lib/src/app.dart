@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_agc_mockup/src/pages/chapters/chapters_view.dart';
-import 'package:flutter_agc_mockup/src/pages/discussions/discussions_view.dart';
-import 'package:flutter_agc_mockup/src/pages/gardens/gardens_view.dart';
-import 'package:flutter_agc_mockup/src/pages/help/help_view.dart';
-import 'package:flutter_agc_mockup/src/pages/help/help_view_local.dart';
-import 'package:flutter_agc_mockup/src/pages/home/home_view.dart';
-import 'package:flutter_agc_mockup/src/pages/users/users_view.dart';
-import 'package:flutter_agc_mockup/src/pages/outcomes/outcomes_view.dart';
-import 'package:flutter_agc_mockup/src/pages/page_not_found/page_not_found_view.dart';
-import 'package:flutter_agc_mockup/src/pages/seeds/seeds_view.dart';
-import 'package:flutter_agc_mockup/src/pages/signin/signin_view.dart';
-import 'package:flutter_agc_mockup/src/pages/signup/signup_view.dart';
+
+import 'pages/chapters/chapters_view.dart';
+import 'pages/discussions/discussions_view.dart';
+import 'pages/gardens/gardens_view.dart';
+import 'pages/help/help_view.dart';
+import 'pages/help/help_view_local.dart';
+import 'pages/home/home_view.dart';
+import 'pages/outcomes/outcomes_view.dart';
+import 'pages/page_not_found/page_not_found_view.dart';
 import 'pages/sample_feature/sample_item_details_view.dart';
+import 'pages/seeds/seeds_view.dart';
 import 'pages/settings/settings_controller.dart';
 import 'pages/settings/settings_view.dart';
+import 'pages/signin/signin_view.dart';
+import 'pages/signup/signup_view.dart';
+import 'pages/users/users_view.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
-  MyApp(
-      {super.key, required this.settingsController, required this.theme});
+  MyApp({super.key, required this.settingsController, required this.theme});
 
   final SettingsController settingsController;
   final ThemeData theme;

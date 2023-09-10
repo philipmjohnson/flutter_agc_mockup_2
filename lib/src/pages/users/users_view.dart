@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_agc_mockup/src/pages/users/user_card_view.dart';
+
 import '../../components/drawer_view.dart';
 import '../../components/help_button.dart';
 import '../../data_model/user_db.dart';
+import 'user_card_view.dart';
 
 const pageSpecification = '''
 # Users Page Specification
@@ -39,7 +40,6 @@ class UsersView extends StatelessWidget {
   final String title = 'Users';
   static const routeName = '/users';
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,11 +48,11 @@ class UsersView extends StatelessWidget {
         title: const Text('Members'),
         actions: const [HelpButton(routeName: UsersView.routeName)],
       ),
-      body: ListView(
-          children: [
-            ...userDB.getAssociatedUserIDs(currentUserID).map((userID) => UserCardView(userID: userID))
-        ]
-      ),
+      body: ListView(children: [
+        ...userDB
+            .getAssociatedUserIDs(currentUserID)
+            .map((userID) => UserCardView(userID: userID))
+      ]),
       bottomNavigationBar: BottomNavigationBar(
         // type: BottomNavigationBarType.fixed, // needed when more than 3 items
         items: const [
